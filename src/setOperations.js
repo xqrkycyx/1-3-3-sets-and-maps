@@ -1,7 +1,18 @@
 /**
  * return the union of two sets
  */
-function union(s1, s2) {}
+// Function to compute the union of two Sets
+function union(setA, setB) {
+  // Create a new Set to store the union
+  const resultSet = new Set(setA);
+
+  // Add elements from setB to resultSet
+  for (const elem of setB) {
+    resultSet.add(elem);
+  }
+
+  return resultSet;
+}
 
 /**
  * return the intersection of two sets
